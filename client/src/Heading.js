@@ -3,15 +3,17 @@
 
 
 import React from 'react';
-// import logout from './index'
+import logout from './index'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import Login from './components/Login.js';
 
 class Heading extends React.Component {
 render(){
-    const logout = () => {
-        localStorage.removeItem('token')
-      };
+    // Commented & using logout from index only for the netlify build because
+    // We need a serverless server for nodejs with netlify to read a db for deployment
+    // const logout = () => {
+    //     localStorage.removeItem('token')
+    //   };
     
     return(
 
